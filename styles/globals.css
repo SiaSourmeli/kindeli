@@ -11,26 +11,58 @@ body {
   box-sizing: border-box;
 }
 
-main {
+/* main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}  */
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #2ecc71;
+  --logo-color: #ff2cdf;
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 12px;
+  --font-size-bigger: 16px;
+  --max-width: 1024px;
 }
 
-code {
-  background: #e2e8f0;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.heroContainer {
+  /* position: relative; */
+  width: 100%;
+  height: calc(100vh - 230px);
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.projectGrid {
+  display: grid;
+  gap: 15px;
   justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 12px;
 }
