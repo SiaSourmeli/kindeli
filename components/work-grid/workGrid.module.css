@@ -1,0 +1,69 @@
+.workGrid {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  border-radius: 12px;
+}
+
+.workGrid div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px; /* Allow the height to adjust based on the content */
+  width: 100%; /* Make the container responsive */
+
+  /* padding-bottom: 75%; Maintain a 4:3 aspect ratio for each grid item (height/width = 3/4) */
+
+}
+
+.workGrid a {
+  text-decoration: none;
+}
+
+.workGrid div:hover .title {
+  visibility: visible;
+  opacity: 1;
+}
+
+.workGrid div:hover .workGridImg {
+    opacity: 0.6; /* Reduce opacity when the user hovers over the grid item */
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+.workGridImg {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.title {
+  margin-top: 10px;
+  font-size: var(--font-size-bigger);
+  font-weight: 600;
+      /* for text on top of the image */
+      /* position: absolute;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: fit-content;
+      bottom: 10px;
+      left: 10px;
+      right: 10px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+  }
+}

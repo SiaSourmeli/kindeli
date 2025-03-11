@@ -1,0 +1,70 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "FASHION",
+            "thumbnail": "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+            "images": [
+                "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+                "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+                "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+                "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "PORTRAIT",
+            "thumbnail": "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+            "images": [
+                "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+                "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+                "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+                "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "PRODUCT",
+            "thumbnail": "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+            "images": [
+                "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+                "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+                "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+                "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "FOOD",
+            "thumbnail": "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/",
+            "images": [
+                "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/",
+                "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/",
+                "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/",
+                "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "PROJECT FIVE",
+            "thumbnail": "https://ucarecdn.com/995f41c5-7568-4230-94c7-7fad05b251cc/-/preview/1000x767/",
+            "images": [
+                "/project1-1.jpg",
+                "/project1-2.jpg",
+                "/project1-3.jpg",
+                "/project1-4.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "PROJECT SIX",
+            "thumbnail": "https://ucarecdn.com/4f75162f-ccc4-40b0-aa66-2b926c58bd91/-/preview/460x563/",
+            "images": [
+                "/project1-1.jpg",
+                "/project1-2.jpg",
+                "/project1-3.jpg",
+                "/project1-4.jpg"
+            ]
+        }
+    ]
+}
