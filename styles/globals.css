@@ -37,7 +37,6 @@ img {
 }
 
 .container {
-  max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -45,7 +44,7 @@ img {
 }
 
 .heroContainer {
-  /* position: relative; */
+  position: relative;
   width: 100%;
   height: calc(100vh - 230px);
 }
@@ -60,9 +59,15 @@ img {
 }
 
 .projectGrid {
-  display: grid;
+  /* display: grid;
   gap: 15px;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  border-radius: 12px;
+  border-radius: 12px; */
+
+  /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 133px;
+    grid-row-gap: 135px;
+    grid-auto-rows: min-content; */
 }
