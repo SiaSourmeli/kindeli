@@ -7,14 +7,15 @@ interface Project {
   id: number;
   title: string;
   thumbnail: string;
-  images: string[];
+  images: { url: string; width: number; height: number }[];
 }
 
 const projects: Project[] = projectsGrid.projects;
 
 export default function WorkGrid() {
   return (
-    <div className={styles.workGrid}>
+    <div className={styles.workGridWrap}>
+          <div className={styles.workGrid}>
       {projects.map((project) => (
         <Link key={project.id} href={`work/${project.title}`}>
           <div>
@@ -30,5 +31,7 @@ export default function WorkGrid() {
         </Link>
       ))}
     </div>
+    </div>
+
   );
 }
