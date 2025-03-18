@@ -14,6 +14,7 @@ const projects: Project[] = projectsGrid.projects;
 
 export default function WorkGrid() {
   return (
+    
     <div className={styles.workGridWrap}>
           <div className={styles.workGrid}>
       {projects.map((project) => (

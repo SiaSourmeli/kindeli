@@ -1,7 +1,7 @@
 .workGridWrap {
   display: flex;
-
   justify-content: center;
+  padding-top: var(--padding-top);
 }
 
 .workGrid {

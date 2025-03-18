@@ -9,15 +9,18 @@ export default function Header() {
     <nav className={styles.headerContainer}>
       <div>
         <Link href="/" className={`${styles.logo} ${fontLogo.className}`}>
-          <h1>KYNTHIA KINDELI</h1>
+          <h1>Kynthia Kindeli</h1>
         </Link>
       </div>
 
       <div>
         {/* <button className={`${styles.box} ${styles.button}`}>Menu</button> */}
-
-        <Link href="/work" className={styles.links}>Work</Link>
-        <Link href="/contact" className={styles.links}>Contact</Link>
+        <Link href="/work" className={styles.links}>
+          Work
+        </Link>
+        <Link href="/contact" className={styles.links}>
+          Contact
+        </Link>
       </div>
     </nav>
   );
