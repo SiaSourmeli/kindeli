@@ -1,25 +1,25 @@
-
 .headerContainer {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin:0 15px 0 15px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px 0 40px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
 }
 
 .logo {
-    color: var(--logo-color);
-    text-decoration: none;
-    font-size: 24px;
+  color: var(--logo-color);
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .links {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: var(--font-size-bigger);
-    padding-left: 15px;
-
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: var(--font-size-bigger);
+  padding-left: 15px;
 }
 
 /* .menuBtn {
@@ -30,7 +30,7 @@
     border: none;
 } */
 
-/* From Uiverse.io by Cornerstone-04 */ 
+/* From Uiverse.io by Cornerstone-04 */
 /* .box {
     width: 140px;
     height: auto;
@@ -100,60 +100,61 @@
     background: transparent;
   } */
 
-  /* From Uiverse.io by BHARGAVPATEL1244 */ 
-/* From Uiverse.io by nikk7007 */ 
+/* From Uiverse.io by BHARGAVPATEL1244 */
+/* From Uiverse.io by nikk7007 */
 .button {
-    --color: #00A97F;
-    padding: 0.8em 1.7em;
-    background-color: #61ff56;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--logo-color);
-    z-index: 1;
-   }
-   
-   .button::before, .button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--logo-color);
-    transition: 1s ease;
-   }
-   
-   .button::before {
-    top: -1em;
-    left: -1em;
-   }
-   
-   .button::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-   }
-   
-   .button:hover::before, .button:hover::after {
-    height: 410px;
-    width: 410px;
-   }
-   
-   .button:hover {
-    /* color: rgb(10, 25, 30); */
-    color: #61ff56;
-   }
-   
-   .button:active {
-    filter: brightness(.8);
-   }
-   
+  --color: #00a97f;
+  padding: 0.8em 1.7em;
+  background-color: #61ff56;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--logo-color);
+  z-index: 1;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--logo-color);
+  transition: 1s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  /* color: rgb(10, 25, 30); */
+  color: #61ff56;
+}
+
+.button:active {
+  filter: brightness(0.8);
+}

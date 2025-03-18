@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Layout from "../../components/layout";
 import projectsGrid from "../../data/projects.json";
-// import styles from "../../styles/globals.css";
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/masonry.css";
 
@@ -32,7 +31,8 @@ export default function ProjectPage() {
 
   return (
     <Layout>
-      <MasonryPhotoAlbum
+      <div className="projectWrap">
+        <MasonryPhotoAlbum
         photos={photos}
         spacing={80}
         columns={(containerWidth) => {
@@ -43,6 +43,8 @@ export default function ProjectPage() {
           }
         }}
       />
+      </div>
+      
     </Layout>
   );
 }
