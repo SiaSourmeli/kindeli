@@ -28,7 +28,7 @@ body {
   --font-size: 12px;
   --font-size-bigger: 16px;
   --max-width: 1024px;
-  --padding-top:150px
+  --padding-top:120px
 }
 
 img {
@@ -50,6 +50,7 @@ img {
 
 .contactWrap {
   padding-top: var(--padding-top);
+  max-width: var(--max-width);
 }
 
 .projectGrid {
