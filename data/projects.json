@@ -4,7 +4,41 @@
             "id": 1,
             "title": "FASHION",
             "thumbnail": "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+            "size": "large",
            "images": [
+                {
+                    "url": "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
+                    "width": 999,
+                    "height": 961
+                },
+                {
+                    "url": "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+                    "width": 793,
+                    "height": 1000
+                },
+                {
+                    "url": "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+                    "width": 846,
+                    "height": 1000
+                },
+                {
+                    "url": " https://ucarecdn.com/0466120a-e80a-490f-ad71-8c80fba9809c/-/preview/1000x667/",
+                    "width": 1000,
+                    "height": 667
+                },
+
+               
+
+                {
+                    "url": "https://ucarecdn.com/6fe14d92-f924-4178-9c21-d98678cd8c34/-/preview/640x778/",
+                    "width": 640,
+                    "height": 778
+                },
+                {
+                    "url": "https://ucarecdn.com/904afecb-7be9-467a-b1d4-9fd2afd9260b/-/preview/846x1000/",
+                    "width": 846,
+                    "height": 1000
+                },
                 {
                     "url": "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
                     "width": 999,
@@ -36,6 +70,7 @@
             "id": 2,
             "title": "PORTRAIT",
             "thumbnail": "https://ucarecdn.com/41adebe9-6e73-47e7-b750-202e66f41921/-/preview/793x1000/",
+            "size": "small",
             "images": [
                 {
                     "url": "https://ucarecdn.com/5831b899-9f54-4813-b26b-97bc65344f11/-/preview/999x961/",
