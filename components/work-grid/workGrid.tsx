@@ -14,25 +14,23 @@ const projects: Project[] = projectsGrid.projects;
 
 export default function WorkGrid() {
   return (
-    
-    <div className={styles.workGridWrap}>
-          <div className={styles.workGrid}>
-      {projects.map((project) => (
-        <Link key={project.id} href={`work/${project.title}`}>
-          <div>
-            <Image
-              src={project.thumbnail}
-              alt={project.title}
-              width={400}
-              height={300}
-              className={styles.workGridImg}
-            />
-            <p className={styles.title}> {project.title}</p>
-          </div>
-        </Link>
-      ))}
+    <div className={`container ${styles.workGridWrap}`}>
+      <div className={styles.workGrid}>
+        {projects.map((project) => (
+          <Link key={project.id} href={`work/${project.title}`}>
+            <div>
+              <Image
+                src={project.thumbnail}
+                alt={project.title}
+                width={400}
+                height={300}
+                className={styles.workGridImg}
+              />
+              <p className={styles.title}> {project.title}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
-    </div>
-
   );
 }
