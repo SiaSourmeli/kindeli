@@ -8,7 +8,7 @@ export default function Bio() {
         <Image
           src="https://ucarecdn.com/a5f2ab1e-5c5f-403b-b843-675b8312fc95/kynthia.png"
           alt="Kynthia Kindeli"
-          width={600}
+          width={400}
           height={500}
           className="bio-image"
         ></Image>
