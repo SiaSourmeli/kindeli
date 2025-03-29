@@ -31,10 +31,10 @@ export default function ProjectPage() {
 
   return (
     <Layout>
-      <div className="project-container ">
+      <div className="projectWrap">
         <MasonryPhotoAlbum
         photos={photos}
-        spacing={5}
+        spacing={80}
         columns={(containerWidth) => {
           if (containerWidth < 900) {
             return 1;
@@ -43,11 +43,6 @@ export default function ProjectPage() {
           }
         }}
       />
-      </div>
-
-      <div className="title-container"> 
-        <h1>{title}</h1>
-
       </div>
       
     </Layout>
