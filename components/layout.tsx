@@ -15,11 +15,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
       </Head>
-      <div className="layout container">
-        <Header />
-        <main>{children}</main>
-      </div>
-
+      <Header />
+      <main className="container">{children}</main>
       {/* <Footer /> */}
     </div>
   );
