@@ -1,17 +1,16 @@
 .header {
   background-color: transparent;
   left: 0;
-  /* width: 100%; */
+  width: 100%;
   top: 0;
-  padding-top: 50px;
 }
 
 .headerContainer {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-top: 8px;
+  padding-top: 8px; 
   max-width: 1200px;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .logoPadding {
-  padding-left: 45px;
+  padding-left:45px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -44,18 +43,22 @@
   gap: 40px;
   align-items: center;
   list-style: "";
-}
+  
+  }
 
 .navLink {
   text-decoration: none;
   color: var(--primary-color);
+
   transition: color 0.3s ease;
+
 }
 
 .navLink:hover,
 .navLink:focus {
   color: var(--secondary-color);
 }
+
 
 @media only screen and (max-width: 800px) {
   .navMenu {
@@ -77,23 +80,9 @@
     justify-content: center;
     font-size: var(--font-size-bigger);
   }
+}
 
-  .header {
-    background-color: transparent;
-    left: 0;
-    width: 100%;
-    top: 0;
-    /* padding-top: 50px; */
-  }
-  
-  .headerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding-top: 8px;
-    max-width: 1200px;
-  }
+@media only screen and (min-width: 800px) {
   .navMenu ul {
     padding: 0px;
     flex-direction: row;
