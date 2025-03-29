@@ -3,9 +3,7 @@ import { AppProps } from "next/app";
 
 function Application({ Component, pageProps }: AppProps) {
   return (
-    <main>
-      <Component {...pageProps} />
-    </main>
+    <Component {...pageProps} />
   );
 }
 

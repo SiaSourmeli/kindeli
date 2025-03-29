@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 import MenuButton from "../menu-button/menu-button";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({headerTop}: {headerTop: boolean}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={headerTop ? styles.absoluteTop : ''}>
       <nav className={`${styles.headerContainer} container`}>
         <div>
           <Link href="/" className={`${styles.logo}`}>

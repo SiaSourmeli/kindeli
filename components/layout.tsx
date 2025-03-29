@@ -1,8 +1,13 @@
 import Head from "next/head";
 import Header from "./header";
-import Footer from "./footer/footer";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({
+  children,
+  headerTop = false,
+}: {
+  children: React.ReactNode;
+  headerTop?: boolean;
+}) {
   return (
     <div>
       <Head>
@@ -15,9 +20,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           rel="stylesheet"
         />
       </Head>
-      <Header />
-      <main className="container">{children}</main>
-      {/* <Footer /> */}
+      <Header headerTop={headerTop} />
+      <main>{children}</main>
     </div>
   );
 }

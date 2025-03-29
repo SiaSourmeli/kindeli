@@ -2,8 +2,10 @@
     display: none;
     position: relative;
     z-index: 1;
-    background-color: transparent;
+    background-color: var(--secondary-color);
     border: none;
+    border-radius: 5px;
+
 }
 
 .bar {
@@ -13,7 +15,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--secondary-color);
+    background-color: var(--logo-color);
 }
 
  @media (max-width: 800px) {    
@@ -26,7 +28,7 @@
         opacity: 0;
     }
 
-    .navButtonactive .bar:nth-child(1){
+    .navButton.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 

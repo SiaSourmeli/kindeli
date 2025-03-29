@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   height: 100%;
-  }
+}
 
 * {
   box-sizing: border-box;
@@ -19,13 +19,13 @@ body {
   --primary-color: #000000;
   --secondary-color: #00ff6a;
   --logo-color: #ff00d9;
-  --font-family: "Roboto", sans-serif ;
+  --font-family: "Roboto", sans-serif;
   --font-size-small: 10px;
   --font-size: 16px;
   --font-size-bigger: 20px;
   --font-size-title: 20px;
   --max-width: 1024px;
-  --padding-top: 150px;
+  --padding-top: 100px;
 }
 
 img {
@@ -49,22 +49,21 @@ img {
   }
 }
 
-
 /* --------- BIO --------- */
 .bio-container {
   padding-top: var(--padding-top);
-  display: grid;
-  grid-template-columns: 2fr 2fr; 
-  gap: 20px; 
-  align-items: center; 
-  max-width: 900px; 
-  margin: auto; 
-  
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-image {
+  border-radius: 50%;
 }
 
 .bio-title {
   font-size: var(--font-size-title);
-  padding-bottom: 24px;
 }
 
 .bio-text {
@@ -72,114 +71,51 @@ img {
   white-space: pre-wrap;
   max-width: 500px;
   line-height: 1.5em;
-  letter-spacing: .02em;
-}
-
-.bio-image {
-  border-radius: 50%; 
+  letter-spacing: 0.02em;
+  padding-top: 24px;
 }
 
 @media (max-width: 768px) {
   .bio-container {
-    grid-template-columns: 1fr; 
-    text-align: center; 
+    flex-direction: column;
   }
 
   .bio-text {
-    text-align: center; 
+    text-align: center;
   }
 }
 
-
-/* --------- archive ---------*/
-.archive-container {
+.bio-social {
   display: flex;
   justify-content: center;
-  padding-top: var(--padding-top);
+  padding: 40px 0;
 }
 
-.workGrid {
-  display: grid;
-  grid-gap: 100px;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* grid-template-columns: 30% 40% 30%; */
-  max-width: 1000px; /* Restricting the max width ensures it doesn’t go beyond 3 columns */
-  width: 100%;
+.instagram-svg:hover {
+  fill: var(--logo-color);
 }
-
-.workGrid div {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  /* padding-bottom: 75%; Maintain a 4:3 aspect ratio for each grid item (height/width = 3/4) */
-}
-
-.workGrid a {
-  text-decoration: none;
-}
-
-.workGrid div:hover .title {
-  visibility: visible;
-  opacity: 1;
-}
-
-.workGrid div:hover .workGridImg {
-  opacity: 0.5; /* Reduce opacity when the user hovers over the grid item */
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.workGridImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.title {
-  color: var(--primary-color);
-}
-
-.title {
-  margin-top: 10px;
-  font-weight: 600;
-  
-  /* for text on top of the image */
-  position: absolute;
-  padding: 8px;
-  /* background-color: rgba(255, 255, 255, 0.5); */
-  background-color: rgba(28, 3, 3, 0.5);
-  width: fit-content;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .title {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.9s ease, visibility 0.9s ease;
-  }
-}
-
 
 /* --------- Project ------------*/
 
 .project-container {
   padding-top: var(--padding-top);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .title-container {
-display: flex;
-justify-content: center;
-font-size: var(--font-size-small);
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-small);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
+.title-container h1 {
+  font-weight: normal;
+}
 
 /* --------- contact ------------*/
 .contact-container {
@@ -189,7 +125,6 @@ font-size: var(--font-size-small);
   padding-top: var(--padding-top);
   gap: 50px;
 }
-
 
 .info-wrap {
   display: flex;
@@ -201,16 +136,6 @@ font-size: var(--font-size-small);
   font-size: 16px;
 }
 
-.contactWrap {
-  padding-top: var(--padding-top);
-  max-width: var(--max-width);
-}
-
-.contactText {
-  text-align: center;
-  white-space: pre-wrap;
-}
-
 
 @media only screen and (max-width: 768px) {
   .info-wrap {
@@ -219,14 +144,20 @@ font-size: var(--font-size-small);
   }
 }
 
-.contactInfo {
+.contact-info {
   padding-top: 8px;
   margin-bottom: 20px;
   display: inline-block;
+  color: inherit;
+  text-decoration: none;
 }
 
+.contact-info:hover {
+  color: #ff00d9;
+  text-decoration: underline;
+}
 
-.contact-image {
+/* .contact-image {
   max-height: 500px;
   object-fit: cover;
   position: absolute;
@@ -234,52 +165,4 @@ font-size: var(--font-size-small);
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-}
-
-
-
-
-
-
-
-
-/* Underline effects */
-.underline-hover-effect {
-  position: relative;
-}
-
-.underline-hover-effect::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  transition: width 0.25s ease-out;
-}
-
-.underline-hover-effect:hover::before {
-  width: 100%;
-}
-
-.emailLink {
-  text-decoration: none;
-  color: var(--url-color);
-  display: inline-block;
-}
-
-.emailLink::before {
-  background-color: var(--url-color);
-}
-
-.emailLink:hover::before {
-  background-color: var(--url-color);
-}
-
-
-
-
-
-
-
-
+} */
