@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Layout from "../../components/layout";
 import projectsGrid from "../../data/projects.json";
 import { MasonryPhotoAlbum } from "react-photo-album";
@@ -33,23 +32,22 @@ export default function ProjectPage() {
     <Layout>
       <div className="project-container ">
         <MasonryPhotoAlbum
-        photos={photos}
-        spacing={5}
-        columns={(containerWidth) => {
-          if (containerWidth < 900) {
-            return 1;
-          } else {
-            return 2;
-          }
-        }}
-      />
+          key={project.id}
+          photos={photos}
+          spacing={5}
+          columns={(containerWidth) => {
+            if (containerWidth < 900) {
+              return 1;
+            } else {
+              return 2;
+            }
+          }}
+        />
       </div>
 
-      <div className="title-container"> 
-        <h1>{title}</h1>
-
-      </div>
-      
+      <div className="title-container">
+          <h1>{title}</h1>
+        </div>
     </Layout>
   );
 }
