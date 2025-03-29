@@ -1,38 +1,42 @@
 .navButton {
-    display: none;
-    position: relative;
-    z-index: 1;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
+  display: none;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
+.navButton:hover .bar {
+  background-color: var(--secondary-color);
 
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--logo-color);
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.2s ease;
+  background-color: var(--logo-color);
 }
 
- @media (max-width: 800px) {    
-    .navButton {
-        display: block;
-    }
-    
-    /*Button animation*/
-    .navButton.active .bar:nth-child(2){
-        opacity: 0;
-    }
+@media (max-width: 800px) {
+  .navButton {
+    display: block;
+  }
 
-    .navButton.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
+  /*Button animation*/
+  .navButton.active .bar:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
 
-    .navButton.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
- } 
+  .navButton.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navButton.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
