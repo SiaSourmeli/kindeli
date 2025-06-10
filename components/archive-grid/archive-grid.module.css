@@ -3,7 +3,7 @@
   grid-gap: 50px;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  padding-top: var(--padding-top);
+  /* padding-top: var(--padding-top); */
   padding-bottom: var(--padding-top);
 }
 
@@ -50,7 +50,7 @@
   .workGrid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0;
-    grid-gap: 100px;
+    grid-gap: 30px;
   }
 
   .workGridItem:nth-child(even) .workGridImg {

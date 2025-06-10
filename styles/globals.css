@@ -18,14 +18,16 @@ body {
 :root {
   --primary-color: #000000;
   --secondary-color: #00ff6a;
-  --logo-color: #ff00d9;
+  --logo-color: #a74de7;
   --font-family: "Roboto", sans-serif;
   --font-size-small: 10px;
   --font-size: 16px;
   --font-size-bigger: 20px;
   --font-size-title: 20px;
   --max-width: 1024px;
-  --padding-top: 100px;
+  --padding-top: 50px;
+  --modbile-padding-top: 30px;
+  --padding-bottom: 80px;
 }
 
 img {
@@ -40,22 +42,36 @@ img {
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: var(--modbile-padding-top);
+  padding-bottom: var(---padding-bottom);
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     padding-left: 48px;
     padding-right: 48px;
+    padding-top: var(--padding-top);
   }
+}
+
+.heroContainer {
+   max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: var(--modbile-padding-top);
+  padding-bottom: var(---padding-bottom);
 }
 
 /* --------- BIO --------- */
 .bio-container {
-  padding-top: var(--padding-top);
+  /* padding-top: var(--padding-top); */
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .bio-image {
@@ -69,7 +85,7 @@ img {
 .bio-text {
   text-align: center;
   white-space: pre-wrap;
-  max-width: 500px;
+  max-width: 750px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
   padding-top: 24px;
@@ -78,6 +94,7 @@ img {
 @media (max-width: 768px) {
   .bio-container {
     flex-direction: column;
+    padding-top: var(--modbile-padding-top);
   }
 
   .bio-text {
@@ -117,31 +134,31 @@ img {
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  .project-container {
+    padding-top: var(--modbile-padding-top);
+  }
+}
+
 /* --------- contact ------------*/
 .contact-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding-top: var(--padding-top);
   gap: 50px;
+  justify-content: center;
 }
 
 .info-wrap {
   display: flex;
   text-align: center;
-  gap: 50px;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .h2-contact {
   font-size: 16px;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .info-wrap {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 
 .contact-info {
@@ -153,16 +170,14 @@ img {
 }
 
 .contact-info:hover {
-  color: #ff00d9;
+  color: var(--logo-color);
   text-decoration: underline;
 }
 
-/* .contact-image {
-  max-height: 500px;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-} */
+@media (max-width: 768px) {
+  .contact-container {
+    padding-top: var(--modbile-padding-top);
+    padding-bottom: var(--padding-bottom);
+    flex-direction: column;
+  }
+}

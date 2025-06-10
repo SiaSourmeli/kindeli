@@ -11,25 +11,38 @@
   padding-top: 8px;
   max-width: 1200px;
 }
+.logoWrap {
+    z-index: 1;
+}
 
 .logo {
   color: var(--logo-color);
   text-decoration: none;
   font-size: 40px;
-  font-family: "Boldonse", system-ui;
+  /* font-family: "Boldonse", system-ui; */
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
 }
 
 .logo p {
   margin: 0;
 }
 
-.logoPadding {
-  padding-left: 45px;
+.logoLastName {
+  padding-left: 75px;
+  color: black;
 }
 
 @media (max-width: 600px) {
   .logo {
     font-size: 24px;
+  }
+
+  .logoLastName {
+    padding-left: 40px;
   }
 }
 
@@ -40,13 +53,12 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  list-style: "";
+  list-style: none;
 }
 
 .navLink {
   text-decoration: none;
   color: var(--primary-color);
-
   transition: color 0.3s ease;
 }
 
@@ -55,7 +67,7 @@
   color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .navMenu {
     position: absolute;
     width: 100%;
@@ -75,20 +87,41 @@
     justify-content: center;
     font-size: var(--font-size-bigger);
   }
-}
+} */
 
+.navMenu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    will-change: transform;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .navMenuOpen {
+    transform: translate3d(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-size-bigger);
+  }
+
+  
 @media only screen and (min-width: 800px) {
   .navMenu ul {
-    padding: 0px;
-    flex-direction: row;
+  /* padding: 0px;
+    flex-direction: row;  */
   }
 
   /* !!! not sure about this css, absolute only after   */
   .absoluteTop {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1; */
   }
 }
