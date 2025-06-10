@@ -15,10 +15,15 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap"
           rel="stylesheet"
-        />
+        /> */}
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Boldonse&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header headerTop={headerTop} />
       <main>{children}</main>

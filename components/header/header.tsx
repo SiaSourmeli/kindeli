@@ -13,10 +13,10 @@ export default function Header({headerTop}: {headerTop: boolean}) {
   return (
     <header className={headerTop ? styles.absoluteTop : ''}>
       <nav className={`${styles.headerContainer} container`}>
-        <div>
+        <div className={styles.logoWrap}>
           <Link href="/" className={`${styles.logo}`}>
-            <p>Kynthia</p>
-            <p className={styles.logoPadding}>Kindeli</p>
+            <p>KYNTHIA</p>
+            <p className={styles.logoLastName}>KINDELI</p>
           </Link>
         </div>
 
@@ -24,12 +24,12 @@ export default function Header({headerTop}: {headerTop: boolean}) {
           className={`${styles.navMenu} ${menuOpen ? styles.navMenuOpen : ""}`}
         >
           <ul>
-            <Link href="/archive" className={styles.navLink}>
-              Archive
+            <Link href="/work" className={styles.navLink}>
+              Work
             </Link>
 
-            <Link href="/bio" className={styles.navLink}>
-              Bio
+            <Link href="/about" className={styles.navLink}>
+              About
             </Link>
 
             <Link href="/contact" className={styles.navLink}>
