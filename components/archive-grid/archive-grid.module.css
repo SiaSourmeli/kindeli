@@ -54,6 +54,6 @@
   }
 
   .workGridItem:nth-child(even) .workGridImg {
-    max-width: 60%;
+    max-width: 68%;
   }
 }
