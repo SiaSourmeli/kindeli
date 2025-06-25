@@ -11,12 +11,12 @@ export default function Header({headerTop}: {headerTop: boolean}) {
   };
 
   return (
-    <header className={headerTop ? styles.absoluteTop : ''}>
+    <header className={headerTop ? styles.header : ''}>
       <nav className={`${styles.headerContainer} container`}>
         <div className={styles.logoWrap}>
           <Link href="/" className={`${styles.logo}`}>
-            <p>KYNTHIA</p>
-            <p className={styles.logoLastName}>KINDELI</p>
+            <span>KYNTHIA</span>
+            <span className={styles.logoLastName}>KINDELI</span>
           </Link>
         </div>
 

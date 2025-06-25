@@ -21,7 +21,7 @@ export default function Layout({
         /> */}
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Boldonse&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
