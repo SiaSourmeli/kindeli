@@ -113,7 +113,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/lib/contentful.ts"  ],
   "exclude": [
     "node_modules"
   ]
