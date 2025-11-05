@@ -1,6 +1,35 @@
+import { useCallback, useEffect, useState } from "react";
 import Layout from "../components/layout";
+import Image from "next/image";
 
-export default function About() {   
+export default function About() {
+  const [videoReady, setVideoReady] = useState(false);
+  const [videoReady2, setVideoReady2] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo2, setShowVideo2] = useState(false);
+
+  const handleIframeLoad = useCallback(() => {
+    console.log("handleIframeLoad");
+    setTimeout(() => setVideoReady(true), 1500);
+  }, []);
+
+  const handleIframeLoad2 = useCallback(() => {
+    console.log('handleIframeLoad2')
+    setTimeout(() => setVideoReady2(true), 1500);
+  }, []);
+
+  useEffect(() => {
+    console.log('videoReady', videoReady)
+    if (videoReady) {
+         console.log("useEffect");
+      setShowVideo(true);
+    }
+    if (videoReady2) {
+      console.log("useEffect");
+      setShowVideo2(true);
+    }
+  }, [videoReady, videoReady2]);
+
   return (
     <Layout>
       <div className="container">
@@ -56,12 +85,52 @@ export default function About() {
           </div>
 
           <div className="bio-video-wrapper">
+            <div
+              className={`bio-video-poster ${showVideo ? "is-hidden" : ""}`}
+              aria-hidden
+            >
+              <Image
+                src="https://5nqof8zag4.ucarecd.net/98f12df5-6d2a-4729-b2d0-121c0ba49363/-/preview/1000x562/"
+                alt="Kynthia Kindeli — teaser frame"
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                priority
+                placeholder="empty"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+
             <iframe
               src="https://player.vimeo.com/video/1133200255?background=1&autoplay=1&loop=1&muted=1&autopause=0&title=0&byline=0&portrait=0"
               className="bio-video-large"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="Kynthia Kindeli video"
+              onLoad={handleIframeLoad}
+            />
+          </div>
+
+          <div className="bio-video-wrapper2">
+
+            <div className={`bio-video-poster2 ${showVideo2 ? "is-hidden" : ""}`} aria-hidden>
+              <Image
+                src="https://5nqof8zag4.ucarecd.net/f1c147ec-8fc7-49f4-943b-dd3c10f1e5e5/-/preview/1000x562/"
+                alt="Kynthia Kindeli — teaser frame"
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                priority
+                placeholder="empty"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+
+            <iframe
+              src="https://player.vimeo.com/video/1133200255?background=1&autoplay=1&loop=1&muted=1&autopause=0&title=0&byline=0&portrait=0"
+              className="bio-video-large2"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Kynthia Kindeli video"
+              onLoad={handleIframeLoad2}
             />
           </div>
         </div>

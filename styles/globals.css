@@ -73,6 +73,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: var(--padding-bottom);
 }
 
 .bio-image {
@@ -183,7 +184,8 @@ img {
   }
 }
 
-/* --------- BIO ------------*/
+
+/* --------- BIO VIDEO ------------*/
 /* Wrapper creates aspect ratio and stacking context */
 .bio-video-wrapper {
   position: relative;
@@ -198,7 +200,6 @@ img {
   padding-top: 56.25%;
 }
 
-
 .bio-video-large {
   position: absolute;
   inset: 0;
@@ -208,4 +209,61 @@ img {
   object-fit: cover;
   transform: translate(-5%, -5%);
   opacity: 1;
+}
+
+.bio-video-poster {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+    width: 110%;
+  height: 110%;
+    transform: translate(-5%, -5%);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 800ms ease;
+}
+.bio-video-poster.is-hidden {
+  opacity: 0;
+}
+
+
+/* --------- BIO VIDEO 2------------*/
+/* Wrapper creates aspect ratio and stacking context */
+.bio-video-wrapper2 {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+}
+
+/* 16:9 aspect ratio */
+.bio-video-wrapper2::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.bio-video-large2 {
+  position: absolute;
+  inset: 0;
+  width: 110%;
+  height: 110%;
+  border: 0;
+  object-fit: cover;
+  transform: translate(-5%, -5%);
+  opacity: 1;
+}
+
+.bio-video-poster2 {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+    width: 110%;
+  height: 110%;
+    transform: translate(-5%, -5%);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 800ms ease;
+}
+.bio-video-poster2.is-hidden {
+  opacity: 0;
 }

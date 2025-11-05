@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-     domains: ['ucarecdn.com', 'images.ctfassets.net'],
+     domains: ['ucarecdn.com', 'images.ctfassets.net', '5nqof8zag4.ucarecd.net'],
   }
 };
 
