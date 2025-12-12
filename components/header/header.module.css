@@ -1,12 +1,12 @@
-
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-top: 30px;
-  max-width: 1500px;
+  padding-top: 70px;
+  max-width: 1200px;
 }
+
 .logoWrap {
   z-index: 1;
 }
@@ -22,6 +22,11 @@
   font-weight: 600;
   font-style: normal;
   line-height: 0.9;
+}
+
+.ul {
+  flex-direction: column;
+  gap: 10px;
 }
 
 .logo p {
@@ -48,7 +53,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* gap: 40px; */
   align-items: center;
   list-style: none;
   font-weight: 400;
@@ -67,6 +72,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .headerContainer {
+    padding-top: 30px;
+  }
+
   .navMenu {
     position: fixed;
     width: 100%;
@@ -108,20 +117,18 @@
     font-size: var(--font-size-bigger);
   } */
 
-    /* !!! not sure about this css, absolute only after   */
-  .header {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
+/* !!! not sure about this css, absolute only after   */
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 @media only screen and (min-width: 800px) {
   .navMenu ul {
     padding: 0px;
     flex-direction: row;
   }
-
-
 }

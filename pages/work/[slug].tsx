@@ -76,10 +76,10 @@ export default function ProjectPage({ project }: { project: ProjectSkeleton }) {
 
   return (
     <Layout>
-      <div className="project-container ">
+      <div className="project-container">
         <MasonryPhotoAlbum
           photos={photos}
-          spacing={5}
+          spacing={0}
           columns={(containerWidth) => {
             if (containerWidth < 900) {
               return 1;

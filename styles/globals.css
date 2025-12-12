@@ -25,8 +25,8 @@ body {
   --font-size: 18px;
   --font-size-bigger: 22px;
   --font-size-title: 20px;
-  --max-width: 1024px;
-  --padding-top: 50px;
+  --max-width: 1200px;
+  --padding-top: 62px;
   --modbile-padding-top: 30px;
   --padding-bottom: 80px;
 }
@@ -43,7 +43,7 @@ img {
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: var(--modbile-padding-top);
+  padding-top: var(--padding-top);
   padding-bottom: var(---padding-bottom);
 }
 
@@ -51,7 +51,7 @@ img {
   .container {
     padding-left: 48px;
     padding-right: 48px;
-    padding-top: 30px;
+    padding-top: 96px;
   }
 }
 
@@ -116,6 +116,11 @@ img {
 
 /* --------- BIO VIDEO ------------*/
 /* Wrapper creates aspect ratio and stacking context */
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
 .bio-video-wrapper {
   position: relative;
   width: 100%;
@@ -144,9 +149,9 @@ img {
   position: absolute;
   inset: 0;
   z-index: 2;
-    width: 110%;
+  width: 110%;
   height: 110%;
-    transform: translate(-5%, -5%);
+  transform: translate(-5%, -5%);
   pointer-events: none;
   opacity: 1;
   transition: opacity 800ms ease;
@@ -155,10 +160,7 @@ img {
   opacity: 0;
 }
 
-
-
 /* --------- Project ------------*/
-
 .project-container {
   padding-top: var(--padding-top);
   margin-left: auto;
@@ -189,8 +191,7 @@ img {
 .contact-container {
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
-  padding-top: var(--padding-top);
+  padding-top: 174px;
   gap: 50px;
   justify-content: center;
 }
@@ -221,10 +222,8 @@ img {
 
 @media (max-width: 768px) {
   .contact-container {
-    padding-top: var(--modbile-padding-top);
+    padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
     flex-direction: column-reverse;
   }
 }
-
-
