@@ -46,7 +46,7 @@ export default function About() {
             />
           </div>
 
-          <div className="bio-text">
+          <div >
             <h1 className="bio-title">About Kynthia</h1>
             <p className="bio-text">
               Kynthia Kindeli was born in Chania Crete. She studied photography
