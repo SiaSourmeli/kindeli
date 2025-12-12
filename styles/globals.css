@@ -83,10 +83,12 @@ img {
 
 .bio-title {
   font-size: var(--font-size-title);
+  text-align: center;
+    padding-top: 24px;
 }
 
 .bio-text {
-  text-align: center;
+  text-align: justify;
   white-space: pre-wrap;
   line-height: 1.5em;
   letter-spacing: 0.02em;
@@ -100,7 +102,7 @@ img {
   }
 
   .bio-text {
-    text-align: center;
+    text-align: justify;
   }
 }
 
