@@ -54,25 +54,25 @@ export default function ProjectPage({ project }: { project: ProjectSkeleton }) {
   const title = project.fields.title;
 
   const photos: Photo[] = project.fields.gallery
-  ? project.fields.gallery
-      .map((asset) => {
-        const file = asset?.fields?.file;
-        const url = file?.url;
-        const fileDetails = file?.details as AssetDetails | undefined;
-        const width = fileDetails?.image?.width;
-        const height = fileDetails?.image?.height;
+    ? project.fields.gallery
+        .map((asset) => {
+          const file = asset?.fields?.file;
+          const url = file?.url;
+          const fileDetails = file?.details as AssetDetails | undefined;
+          const width = fileDetails?.image?.width;
+          const height = fileDetails?.image?.height;
 
-        if (!url || !width || !height || !fileDetails?.image) return null;
-   
-        return {
-          src: url,
-          alt: asset.fields?.title ?? "image",
-          width,
-          height
-        };
-      })
-      .filter((photo): photo is Photo => photo !== null)
-  : [];
+          if (!url || !width || !height || !fileDetails?.image) return null;
+
+          return {
+            src: url,
+            alt: asset.fields?.title ?? "image",
+            width,
+            height,
+          };
+        })
+        .filter((photo): photo is Photo => photo !== null)
+    : [];
 
   return (
     <Layout>
