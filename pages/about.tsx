@@ -7,21 +7,18 @@ export default function About() {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleIframeLoad = useCallback(() => {
-    console.log("handleIframeLoad");
     setTimeout(() => setVideoReady(true), 1500);
   }, []);
 
   useEffect(() => {
-    console.log("videoReady", videoReady);
     if (videoReady) {
-      console.log("useEffect");
       setShowVideo(true);
     }
   }, [videoReady]);
 
   return (
     <Layout>
-      <div className="container">
+      <div className="container about-container">
         <div className="bio-container">
           <div className="bio-video-wrapper">
             <div

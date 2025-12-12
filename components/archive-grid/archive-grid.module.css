@@ -50,7 +50,7 @@
   .workGrid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0;
-    grid-gap: 30px;
+    /* grid-gap: 30px; */
   }
 
   .workGridItem:nth-child(even) .workGridImg {

@@ -23,9 +23,9 @@ export default function Header({headerTop}: {headerTop: boolean}) {
         <div
           className={`${styles.navMenu} ${menuOpen ? styles.navMenuOpen : ""}`}
         >
-          <ul>
+          <ul className={styles.ul}>
             <Link href="/work" className={styles.navLink}>
-              Work
+              Photography
             </Link>
 
             <Link href="/about" className={styles.navLink}>
