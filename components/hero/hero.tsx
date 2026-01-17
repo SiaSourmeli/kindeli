@@ -125,7 +125,7 @@ export default function Hero() {
         )}
       </div>
 
-      <div style={styles.buttonContainer}>
+      {/* <div style={styles.buttonContainer}>
         <button
           style={styles.button}
           onClick={() => setCurrentImage(portraitImage)}
@@ -138,7 +138,7 @@ export default function Hero() {
         >
           Show Landscape Image
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
