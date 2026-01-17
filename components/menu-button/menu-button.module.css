@@ -9,7 +9,6 @@
 
 .navButton:hover .bar {
   background-color: var(--logo-color);
-
 }
 
 .bar {
@@ -21,7 +20,7 @@
   background-color: var(--primary-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 921px) {
   .navButton {
     display: block;
   }
