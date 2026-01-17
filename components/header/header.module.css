@@ -4,12 +4,12 @@
   justify-content: space-between;
   gap: 16px;
   padding-top: 70px;
-  max-width: 922px;
+  max-width: 940px;
 }
 
 .logoWrap {
   z-index: 1;
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 .logo {
